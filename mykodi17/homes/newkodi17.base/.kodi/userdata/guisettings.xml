@@ -1,0 +1,25 @@
+<settings>
+    <lookandfeel>
+        <font>Arial</font>
+        <enablerssfeeds>false</enablerssfeeds>
+    </lookandfeel>
+    <musiclibrary>
+        <backgroundupdate>false</backgroundupdate>
+        <updateonstartup>false</updateonstartup>
+    </musiclibrary>
+    <network>
+        <httpproxyport>8088</httpproxyport>
+    </network>
+    <screensaver>
+        <mode></mode>
+    </screensaver>
+    <services>
+        <esallinterfaces>true</esallinterfaces>
+        <webserver>true</webserver>
+        <webserverport>8189</webserverport>
+    </services>
+    <videolibrary>
+        <backgroundupdate>false</backgroundupdate>
+        <updateonstartup>false</updateonstartup>
+    </videolibrary>
+</settings>

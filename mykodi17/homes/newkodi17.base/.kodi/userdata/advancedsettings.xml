@@ -1,0 +1,10 @@
+<advancedsettings>
+    <videoscreen>
+        <screen>0</screen>
+    </videoscreen>
+    <!-- <cputempcommand>sed -e 's/000$/ C/' /sys/class/hwmon/hwmon0/device/temp1_input</cputempcommand> -->
+    <cputempcommand>/opt/kodi/bin/get_NAS_temperature.sh</cputempcommand>
+    <gputempcommand>sed -e 's/000$/ C/' /sys/class/hwmon/hwmon0/device/temp1_input</gputempcommand>
+</advancedsettings>
+
+
