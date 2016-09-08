@@ -1,0 +1,4 @@
+[global]
+QPKG_NAME="mykodi17"
+keep_env = FALSE
+
