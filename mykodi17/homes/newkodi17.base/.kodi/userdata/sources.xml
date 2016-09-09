@@ -1,0 +1,41 @@
+<sources>
+    <programs>
+        <default pathversion="1"></default>
+    </programs>
+    <video>
+        <default pathversion="1"></default>
+        <source>
+            <name>Multimedia</name>
+            <path pathversion="1">/share/Multimedia/</path>
+        </source>
+        <source>
+            <name>USBDisk</name>
+            <path pathversion="1">/mnt/USBDisk/</path>
+        </source>
+    </video>
+    <music>
+        <default pathversion="1"></default>
+        <source>
+            <name>Multimedia</name>
+            <path pathversion="1">/share/Multimedia/</path>
+        </source>
+        <source>
+            <name>USBDisk</name>
+            <path pathversion="1">/mnt/USBDisk/</path>
+        </source>
+    </music>
+    <pictures>
+        <default pathversion="1"></default>
+        <source>
+            <name>Multimedia</name>
+            <path pathversion="1">/share/Multimedia/</path>
+        </source>
+        <source>
+            <name>USBDisk</name>
+            <path pathversion="1">/mnt/USBDisk/</path>
+        </source>
+    </pictures>
+    <files>
+        <default pathversion="1"></default>
+    </files>
+</sources>
