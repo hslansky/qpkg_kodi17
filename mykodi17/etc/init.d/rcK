@@ -1,0 +1,17 @@
+#!/bin/sh
+CONF=/etc/config/qpkg.conf
+QPKG_NAME="mykodi17"
+QPKG_VERSION_NAME=$(/sbin/getcfg -f $CONF $QPKG_NAME QPKG_VERSION_NAME)
+INSTALL_PATH=`/sbin/getcfg -f $CONF $QPKG_NAME Install_Path`
+
+# iff invoked inside CHROOT environment
+[ -z "$CHROOT_DIR" -o -z "$QPKG_CLASS" ] && exit 1
+
+#killall Plex_Home_Theater
+[ -f /tmp/${QPKG_CLASS}-${QPKG_NAME}.pid ] && kill $(cat /tmp/${QPKG_CLASS}-${QPKG_NAME}.pid)
+
+[ -e "/opt/$QPKG_VERSION_NAME" ] && rm -f "/opt/$QPKG_VERSION_NAME"
+
+[ -e "/opt/startup_shell/startup_${QPKG_NAME}.sh" ] && rm -f "/opt/startup_shell/startup_${QPKG_NAME}.sh"
+
+[ -e "/opt/startup_shell/stop_${QPKG_NAME}.sh" ] && rm -f "/opt/startup_shell/stop_${QPKG_NAME}.sh"
