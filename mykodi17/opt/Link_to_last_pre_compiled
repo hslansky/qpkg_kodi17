@@ -1,0 +1,17 @@
+### Here link to pre-compiled (no change to source) Kodi bin
+### use it if you don't compile yourself kodi and trust me when I said I don't change any line inside ...
+
+Kodi structure please untar in opt folder
+https://www.father-mande.ovh/Q/F/kodi17.tgz
+
+Ubuntu 14.04 missing libraries for HD_Station 
+https://www.father-mande.ovh/Q/F/kodi_lib.tgz
+
+How-to :
+
+get file then : enter in this folder (opt) ... tar xzf /where/are/kodi17.tgz 
+
+then enter in opt/kodi17 new folder then : tar xzf /where/are/kodi_lib.tgz 
+
+SO at end you must have : kodi17 folder in opt and IN kodi17 folder kodi_lib folder
+
