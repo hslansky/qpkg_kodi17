@@ -198,7 +198,8 @@ sed -i "s/QPKG_RETVAL/$QPKG_RETVAL/" $QPKG_BUILTIN_SCRIPT_TMP
 sed -i "s/QPKG_SOURCE_TMPDIR/$QPKG_SOURCE_TMPDIR_SED/g" $QPKG_BUILTIN_SCRIPT_TMP
 
 #count built-in script length
-len1=`wc -c $QPKG_BUILTIN_SCRIPT_TMP | cut -c1-8`
+# len1=`wc -c $QPKG_BUILTIN_SCRIPT_TMP | cut -c1-8`
+len1=`wc -c $QPKG_BUILTIN_SCRIPT_TMP | /bin/tr -s " " | cut -f 1 -d " " `
 len2=`expr $len1 - 10`
 if [ $len2 -lt 1 ];then
 	echo "$QPKG_BUILTIN_SCRIPT contains nothing inside!"
